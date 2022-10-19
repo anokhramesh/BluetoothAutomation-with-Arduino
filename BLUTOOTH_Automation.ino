@@ -14,7 +14,7 @@ void setup() {
 void loop() {
   while (Serial.available() > 0) // checking any data is available on serial terminal
   {
-    inputByte = Serial.read(); //
+    inputByte = Serial.read(); //variable inputByte will store the data available on serial terminlal
     Serial.println(inputByte);//'inputByte' will hold the data from bluetooth
     if (inputByte == '0') // condition checing -if serial data is 0
     {
