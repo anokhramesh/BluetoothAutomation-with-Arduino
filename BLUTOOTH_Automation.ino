@@ -15,7 +15,7 @@ void loop() {
   while (Serial.available() > 0) // checking any data is available on serial terminal
   {
     inputByte = Serial.read(); //variable inputByte will store the data available on serial terminlal
-    Serial.println(inputByte);//'inputByte' will hold the data from bluetooth
+    Serial.println(inputByte);//display the value of 'inputByte'on serial monitor
     if (inputByte == '0') // condition checing -if serial data is 0
     {
       digitalWrite(relay_1, HIGH); //Turn ON the relay 1
